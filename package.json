@@ -1,13 +1,13 @@
 {
   "name": "@ignilogic/runtime-env-config",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Provide configuration to the front-end at runtime from environment variables through an express generate js file.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "lib/**/*"
   ],
-  "publishConfig": { 
+  "publishConfig": {
     "registry": "https://npm.pkg.github.com/igniLogic"
   },
   "scripts": {
