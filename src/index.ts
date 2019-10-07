@@ -16,9 +16,9 @@ export function serveEnvConfig({
   route = "/env.js",
   exposedVars
 }: IServeEnvOptions): any {
-  app.get(route, (_req: any, res: any) => {
+  app.get(route, (req: any, res: any) => {
     res.set("Content-Type", "application/javascript");
-    let body = `
+    const body = `
       window.env = {${(() => {
         const vars = [];
         for (const eVar of exposedVars) {

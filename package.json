@@ -1,5 +1,5 @@
 {
-  "name": "runtime-env-config",
+  "name": "@ignilogic/runtime-env-config",
   "version": "1.0.0",
   "description": "Provide configuration to the front-end at runtime from environment variables through an express generate js file.",
   "main": "dist/index.js",
@@ -7,8 +7,11 @@
   "files": [
     "lib/**/*"
   ],
+  "publishConfig": { 
+    "registry": "https://npm.pkg.github.com/igniLogic"
+  },
   "scripts": {
-    "test": "jest --config jestconfig.json",
+    "test": "jest --config jestconfig.json --passWithNoTests",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
@@ -22,7 +25,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/caki0915/my-awesome-greeter.git"
+    "url": "https://github.com/ignilogic/runtime-env-config.git"
   },
   "devDependencies": {
     "@types/jest": "^24.0.18",
