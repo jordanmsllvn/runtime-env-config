@@ -12,7 +12,7 @@ export function serveEnvConfig(exposedVars: string[]): any {
       window.env = {${(() => {
         const vars = [];
         for (const eVar of exposedVars) {
-          if (process.env[eVar]) vars.push(`${eVar}: ${process.env[eVar]}`);
+          if (process.env[eVar]) vars.push(`${eVar}: '${process.env[eVar]}'`);
         }
         return vars.join(",");
       })()}};
