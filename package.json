@@ -8,7 +8,7 @@
     "lib/**/*"
   ],
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/igniLogic"
+    "registry": "https://npm.pkg.github.com/"
   },
   "scripts": {
     "test": "jest --config jestconfig.json --passWithNoTests",

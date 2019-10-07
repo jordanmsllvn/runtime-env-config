@@ -1,22 +1,12 @@
 // @ts-ignore
 import express, { Application } from "@types/express";
 
-interface IServeEnvOptions {
-  app: Application;
-  route?: string;
-  exposedVars: string[];
-}
-
 /**
  * Injects environment variables at runtime at route. For backend use only.
  * @param config - configuration
  */
-export function serveEnvConfig({
-  app,
-  route = "/env.js",
-  exposedVars
-}: IServeEnvOptions): any {
-  app.get(route, (req: any, res: any) => {
+export function serveEnvConfig(exposedVars: string[]): any {
+  return (req: any, res: any) => {
     res.set("Content-Type", "application/javascript");
     const body = `
       window.env = {${(() => {
@@ -28,7 +18,7 @@ export function serveEnvConfig({
       })()}};
     `;
     res.send(body);
-  });
+  };
 }
 
 /**
