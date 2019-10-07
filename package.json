@@ -1,6 +1,6 @@
 {
   "name": "@ignilogic/runtime-env-config",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Provide configuration to the front-end at runtime from environment variables through an express generate js file.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
