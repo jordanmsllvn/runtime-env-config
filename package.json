@@ -1,5 +1,5 @@
 {
-  "name": "@ignilogic/runtime-env-config",
+  "name": "@jordanmsllvn/runtime-env-config",
   "version": "1.2.3",
   "description": "Provide configuration to the front-end at runtime from environment variables through an express generate js file.",
   "main": "lib/index.js",
@@ -25,7 +25,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ignilogic/runtime-env-config.git"
+    "url": "https://github.com/jordanmsllvn/runtime-env-config.git"
   },
   "devDependencies": {
     "@types/jest": "^24.0.18",
